@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.75rem;
+    border-bottom: 1px solid rgb(194, 193, 193);
+}
+
+.left-menu{
+    margin: 1rem 2rem;
+}
+
+.hambuger{
+    width: 30px;
+    margin-bottom: 0.5rem;
+}
+
+.logo{
+    width: 120px;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.search-box{
+    display: flex;
+    position: relative;
+    height: 35px;
+    width: 50%;
+    max-width: 40rem;
+}
+
+.search{
+    width: 85%;
+    height: 122%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(194, 193, 193);
+    position: absolute;
+    left: 57%;
+    top: -65px;
+    outline: 0;
+}
+
+.search:focus{
+    outline: 1px solid rgb(50, 50, 184);
+}
+
+.search-btn{
+    width: 10%;
+    height: 42.5px;
+    position: absolute;
+    left: 142.1%;
+    top: -65px;
+    border: 1px solid rgb(194, 193, 193);
+}
+
+.search-btn img{
+    width: 20px;
+    height: 20px;
+}
+
+.user-icons{
+    position: absolute;
+    left: 74%;
+    top: 15%;
+}
+
+.icons{
+    padding-right: 1rem;
+    cursor: pointer;
+    width: 45px;
+}
+
+.voice{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:rgb(194, 193, 193);
+    margin-right: 4rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.profile{
+    width: 34px;
+    border-radius: 50%;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+
+.side-menu{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 250px;
+    width: 250px;
+    background-color: #fff;
+    height: 100vh;
+    padding-left: 1rem;
+    border-right: 1px solid #fff;
+}
+
+.links{
+    display: block;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.4rem 0.6rem;
+    color: #242424;
+    font-size: 0.9rem;
+}
+
+.links img{
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.short{
+    width: 20px;
+}
+
+.links.active,
+.links:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 85%;
+    margin: 1rem;
+}
+
+.subscription{
+    display: block;
+    margin: 0.5rem;
+}
+
+.subscription img{
+    width: 23px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.subscription p{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    color: #242424;
+}
+
+.subscription p:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.filters{
+    position: fixed;
+    left: 250px;
+    top: 59px;
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 1rem;
+}
+
+.filter-list{
+    border-radius: 50px;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid rgb(194, 193, 193);
+    margin-left: 0.3rem;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #242424;
+    color: #fff;
+}
+
+.filter-list:hover{
+    background-color: rgb(233, 233, 233);
+}
+
+.videos{
+    padding: 8.5rem 17.1rem;
+    background-color: rgb(248, 248, 248);
+}
+
+.video-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 1rem;
+}
+
+.thumbnail-pic{
+    width: 250px;
+}
+
+.video-details{
+    display: flex;
+    position: relative;
+}
+
+.time{
+    font-size: 0.8rem;
+    background-color: #242424;
+    position: absolute;
+    color: #fff;
+    top: -30%;
+    left: 80%;
+    width: 45px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.profile-pic{
+    border-radius: 50px;
+    width: 40px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.title{
+    margin:0.5rem  1rem;
+}
+
+.title h3{
+    font-size: 0.83rem;
+    font-weight: 600;
+    color: #242424;
+    cursor: pointer;
+}
+
+.title h5{
+    color: rgb(93, 93, 93);
+    font-weight: 500;
+    margin-top: 0.8rem;
+}
+
+.title span{
+    color: rgb(93, 93, 93);
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media only screen and (max-width:768px){
+    .user-icons{
+        display: none;   
+    }
+
+    .search{
+        left: 45%;
+        width: 135%;
+    }
+
+    .search-btn{
+        left: 180%;
+    }
+    
+    .side-menu{
+        display: none;
+    }
+    
+    .logo{
+        padding-left: 0.2rem;
+    }
+
+    .hambuger{
+        display: none;
+    }
+
+    .filters{
+        left: 0px;
+        padding: 0.5rem;
+        height: 55px;
+    }
+
+    .filter-list{
+        display: inline;
+        width: 60px;
+        margin: 0.1rem;
+        padding:0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .videos{
+        padding: 8rem 1.2rem;
+    }
+
+    .video-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 0.3rem;
+    }
+
+    .thumbnail-pic{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width:430px){
+    .video-container{
+        grid-template-columns: 1fr;
+    }
+
+    .search{
+        width: 245px;
+        left: 65%;
+        top: -168%;
+    }
+
+    .search-btn{
+        width: 30px;
+        top: -168%;
+    }
+
+    .logo{
+        width: 85px;
+    }
+
+    .filter-list{
+        display: none;
+    }
+
+    .thumbnail-pic{
+        width: 350px;
+    }
+}
+
